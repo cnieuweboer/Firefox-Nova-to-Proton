@@ -1,0 +1,193 @@
+/* 
+Nova Rounding Adjustments
+- Global Nova corner rounding
+- Compact tab bar and navigation bar
+- URL bar height, popup padding and rounding
+- URL bar identity/search button rounding
+- Tab spacing
+- Context menu hover rounding
+- Bookmarks menu spacing
+- Hamburger/main menu spacing
+*/
+
+
+/* =========================================================
+   GLOBAL NOVA SIZING / ROUNDING VARIABLES
+   ========================================================= */
+
+:root {
+    /* General Nova corner-radius scale */
+    --border-radius-xsmall: 1px !important; 
+    --border-radius-small: 2px !important; 
+    --border-radius-medium: 3px !important; 
+    --border-radius-large: 4px !important; 
+    --border-radius-xlarge: 6px !important;
+
+    /* Height of the visible tab buttons */
+    --tab-min-height: 30px !important;
+
+    /* Height of the URL/address field */
+    --urlbar-height: 30px !important;
+
+    /*
+     * Amount the URL bar popup expands above/beside the normal URL field
+     * when opened.
+     * Nova defaults to a larger value, giving it a padded/oversized top.
+     */
+    --urlbar-background-overhang-open: 5px !important;
+}
+
+
+/* =========================================================
+   URL BAR BUTTON ROUNDING
+   ========================================================= */
+
+/* Search-engine/provider button shown in the URL bar */
+.searchmode-switcher {
+    --button-border-radius: 4px !important;
+}
+
+/* Firefox/internal-page identity button, e.g. about:settings */
+#identity-box > .identity-box-button {
+    border-radius: 4px !important;
+}
+
+/* Trust/security shield button shown on normal websites */
+#trust-icon-container {
+    border-radius: 4px !important;
+}
+
+
+/* =========================================================
+   TABS
+   ========================================================= */
+
+.tabbrowser-tab {
+    /*
+     * Horizontal space between neighboring visible tabs.
+     * Lower values make the tabs sit closer together.
+     */
+    padding-inline: 1px !important;
+
+    /* Remove additional vertical padding inside each tab slot */
+    padding-block: 0 !important;
+}
+
+/*
+ * Reduce otherwise-unused space above and below the whole tab strip.
+ * Negative margins make the toolbar itself shorter without shrinking
+ * the actual tab buttons.
+ */
+#TabsToolbar {
+    margin-top: -3px !important;
+    margin-bottom: -4px !important;
+}
+
+
+/* =========================================================
+   URL BAR POPUP
+   ========================================================= */
+
+/*
+ * Bottom portion of the opened URL-bar suggestions/results popup.
+ * Controls the lower corners of the popup.
+ */
+.urlbarView-background {
+    border-radius: 6px !important;
+}
+
+/*
+ * Top corners of the opened URL bar.
+ * Combined with --urlbar-background-overhang-open above.
+ */
+#urlbar[open] .urlbar-background {
+    border-start-start-radius: 6px !important;
+    border-start-end-radius: 6px !important;
+}
+
+
+/* =========================================================
+   CONTEXT MENUS
+   ========================================================= */
+
+/*
+ * Round the hover/highlight backgrounds in right-click/context menus.
+ */
+menupopup > menuitem,
+menupopup > menu,
+menugroup > menuitem {
+    border-radius: 5px !important;
+}
+
+
+/* =========================================================
+   BOOKMARK MENUS
+   ========================================================= */
+
+/*
+ * Outer padding between bookmark-menu contents and popup border.
+ * Also fixes the larger bottom gap around special items such as
+ * "Open All in Tabs".
+ */
+menupopup[placespopup="true"] {
+    --panel-padding: 4px !important;
+}
+
+/* Normal bookmark/folder entries */
+menupopup[placespopup="true"] .bookmark-item {
+    /* Avoid adding extra left/right inset on top of panel padding */
+    margin-inline: 0 !important;
+
+    /* Height/padding of individual bookmark entries */
+    padding-block: 5px !important;
+}
+
+/* Special bookmark-menu entries and submenu items */
+menupopup[placespopup="true"] > menuitem,
+menupopup[placespopup="true"] > menu {
+    margin-inline: 0 !important;
+    padding-block: 5px !important;
+}
+
+
+/* =========================================================
+   HAMBURGER / MAIN APPLICATION MENU
+   ========================================================= */
+
+/* Individual main-menu entries */
+#appMenu-popup .subviewbutton {
+    /* Remove Nova's additional left/right item margin */
+    margin-inline: 0 !important;
+
+    /* Reduce height of menu entries */
+    padding-block: 5px !important;
+}
+
+/*
+ * Outer spacing between menu-item hover backgrounds and menu border.
+ */
+#appMenu-popup .panel-subview-body {
+    padding: 4px !important;
+}
+
+
+/* =========================================================
+   NAVIGATION TOOLBAR / URL BAR SPACING
+   ========================================================= */
+
+/*
+ * Vertical padding around the whole navigation toolbar.
+ * This controls spacing surrounding the URL bar and toolbar buttons.
+ */
+#nav-bar {
+    padding-block: 2px !important;
+}
+
+/*
+ * Remove additional vertical padding specifically around
+ * the URL-bar container.
+ */
+#urlbar-container {
+    padding-block: 0 !important;
+}
+
