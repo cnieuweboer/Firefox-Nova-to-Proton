@@ -1,0 +1,6 @@
+@-moz-document url-prefix("about:") {
+    :root {
+        --button-border-radius: 6px !important;
+        --border-radius-circle: 6px !important;
+    }
+}
