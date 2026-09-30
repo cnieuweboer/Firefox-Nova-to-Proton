@@ -8,4 +8,4 @@ Set toolkit.legacyUserProfileCustomizations.stylesheets to true in about:config
 
 Make a "chrome" folder in your Firefox profile folder.
 
-Copy userChrome.css into that chrome folder.
+Copy userChrome.css and userContent.css into that chrome folder.
