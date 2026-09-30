@@ -5,5 +5,7 @@ It's not a perfect copy, it's slightly more compact than Proton. And it's not a 
 Installation:
 
 Set toolkit.legacyUserProfileCustomizations.stylesheets to true in about:config
+
 Make a "chrome" folder in your Firefox profile folder.
+
 Copy userChrome.css into that chrome folder.
