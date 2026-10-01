@@ -8,6 +8,7 @@ Nova Rounding Adjustments
 - Context menu hover rounding
 - Bookmarks menu spacing
 - Hamburger/main menu spacing
+- Sidebar spacing and rounding
 */
 
 
@@ -35,8 +36,6 @@ Nova Rounding Adjustments
      * Nova defaults to a larger value, giving it a padded/oversized top.
      */
     --urlbar-background-overhang-open: 5px !important;
-	
-	
 }
 
 
@@ -58,7 +57,7 @@ Nova Rounding Adjustments
     padding: 0 !important;
 }
 
-/* History website-row hover rounding */
+/* History website-row rounding (including mouse hover) */
 sidebar-history {
     --border-radius-circle: 6px !important;
 }
@@ -68,7 +67,7 @@ sidebar-history {
     border-radius: 6px !important;
 }
 
-/* History + Tabs From Other Devices header spacing */
+/* New-style sidebar header spacing */
 .sidebar-panel-heading {
     padding-inline: 2px !important;
     padding-block: 0 !important;
