@@ -35,8 +35,59 @@ Nova Rounding Adjustments
      * Nova defaults to a larger value, giving it a padded/oversized top.
      */
     --urlbar-background-overhang-open: 5px !important;
+	
+	
 }
 
+
+/* =========================================================
+   SIDE BAR
+   ========================================================= */
+
+/* Outer rounding for all sidebar panels */
+#sidebar-box {
+    --border-radius-medium: 6px !important;
+}
+
+/* Shared padding for newer sidebar panels */
+.sidebar-panel {
+    padding: 6px !important;
+}
+
+.sidebar-panel .sidebar-panel-scrollable-content {
+    padding: 0 !important;
+}
+
+/* History website-row hover rounding */
+sidebar-history {
+    --border-radius-circle: 6px !important;
+}
+
+/* Sidebar searchbox rounding */
+#input[type="search"] {
+    border-radius: 6px !important;
+}
+
+/* History + Tabs From Other Devices header spacing */
+.sidebar-panel-heading {
+    padding-inline: 2px !important;
+    padding-block: 0 !important;
+}
+
+/* Bookmarks sidebar */
+#bookmarksPanel.sidebar-panel {
+    padding: 4px !important;
+}
+
+#bookmarksPanel #sidebar-panel-header {
+    padding-inline: 4px !important;
+    padding-block: 3px !important;
+}
+
+#bookmarksPanel #sidebar-search-container {
+    padding-inline: 2px !important;
+    padding-block: 2px !important;
+}
 
 /* =========================================================
    URL BAR BUTTON ROUNDING
