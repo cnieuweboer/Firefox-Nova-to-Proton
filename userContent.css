@@ -5,4 +5,16 @@
         --card-border-radius: 6px !important;
         --border-radius-medium: 6px !important;
     }
+	
+    panel-list {
+        border-radius: 6px !important;
+    }
+	
+    /* Individual menu-item hover backgrounds */
+    panel-item {
+        --panel-item-button-border-radius: 4px !important;
+        --panel-menuitem-padding-inline: 4px !important;
+		--panel-item-button-margin: 0 4px !important;
+		--panel-item-button-padding: 6px 8px !important;
+    }
 }

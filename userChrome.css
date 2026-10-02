@@ -36,8 +36,19 @@ Nova Rounding Adjustments
      * Nova defaults to a larger value, giving it a padded/oversized top.
      */
     --urlbar-background-overhang-open: 5px !important;
+	
+	/* Tab Group Line under tabs */
+    --tab-group-line-toolbar-border-distance: 4px !important;
 }
 
+/* =========================================================
+   TAB GROUP
+   ========================================================= */
+.tab-group-label {
+    --tab-group-label-size: 28px !important;
+    border-radius: 4px !important;
+    padding-inline: 0px !important;
+}
 
 /* =========================================================
    SIDE BAR
