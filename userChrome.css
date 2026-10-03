@@ -38,17 +38,35 @@ Nova Rounding Adjustments
     --urlbar-background-overhang-open: 5px !important;
 	
 	/* Tab Group Line under tabs */
-    --tab-group-line-toolbar-border-distance: 4px !important;
+    --tab-group-line-toolbar-border-distance: 3px !important;
+}
+
+/* =========================================================
+   WINDOW CONTROLS
+   ========================================================= */
+
+/* Hide the portion of the window controls that extends into the navbar */
+.titlebar-buttonbox-container {
+    clip-path: inset(0 0 4px 0);
 }
 
 /* =========================================================
    TAB GROUP
    ========================================================= */
 .tab-group-label {
-    --tab-group-label-size: 28px !important;
+    --tab-group-label-size: 29px !important;
     border-radius: 4px !important;
     padding-inline: 0px !important;
 }
+
+#TabsToolbar {
+    z-index: 2 !important;
+}
+
+#nav-bar {
+    z-index: 1 !important;
+}
+
 
 /* =========================================================
    SIDE BAR
