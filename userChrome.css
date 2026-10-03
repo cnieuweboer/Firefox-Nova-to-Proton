@@ -152,6 +152,11 @@ sidebar-history {
     padding-block: 0 !important;
 }
 
+/* Fully hide tabs inside collapsed groups */
+tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) {
+    padding-inline: 0 !important;
+}
+
 /*
  * Reduce otherwise-unused space above and below the whole tab strip.
  * Negative margins make the toolbar itself shorter without shrinking
