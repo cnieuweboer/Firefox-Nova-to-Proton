@@ -82,7 +82,9 @@ Nova Rounding Adjustments
 
 /* History website-row rounding (including mouse hover) */
 sidebar-history {
-    --border-radius-circle: 6px !important;
+    --border-radius-circle: 4px !important;
+	--border-radius-small: 4px !important;
+	--sidebar-panel-list-item-height: 26px !important;
 }
 
 /* New-style sidebar header spacing */
@@ -104,6 +106,12 @@ sidebar-history {
 #bookmarksPanel #sidebar-search-container {
     padding-inline: 2px !important;
     padding-block: 2px !important;
+}
+
+/* Compact sidebar panel when the sidebar launcher is hidden */
+#sidebar-container[hidden] ~ #sidebar-box:not([sidebar-positionend]) {
+    padding-inline-start: 0 !important;
+    padding-block: 0 !important;
 }
 
 /* =========================================================
@@ -270,4 +278,3 @@ menupopup[placespopup="true"] > menu {
 #urlbar-container {
     padding-block: 0 !important;
 }
-
