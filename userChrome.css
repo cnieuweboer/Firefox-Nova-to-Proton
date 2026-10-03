@@ -267,7 +267,7 @@ menupopup[placespopup="true"] > menu {
  * This controls spacing surrounding the URL bar and toolbar buttons.
  */
 #nav-bar {
-    padding-block: 2px !important;
+    padding-block: 1px !important;
 	z-index: 1 !important;
 }
 
