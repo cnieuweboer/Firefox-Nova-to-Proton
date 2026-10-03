@@ -144,6 +144,11 @@ sidebar-history {
     margin-bottom: -4px !important;
 }
 
+/* Reduce space before the first tab */
+.titlebar-spacer[type="pre-tabs"] {
+    width: 2px !important;
+}
+
 
 /* =========================================================
    URL BAR POPUP
