@@ -39,6 +39,9 @@ Nova Rounding Adjustments
 	
 	/* Tab Group Line under tabs */
     --tab-group-line-toolbar-border-distance: 3px !important;
+	
+	/* Searchbox corners */
+	--input-search-border-radius: 6px !important;
 }
 
 /* =========================================================
@@ -56,17 +59,8 @@ Nova Rounding Adjustments
 .tab-group-label {
     --tab-group-label-size: 29px !important;
     border-radius: 4px !important;
-    padding-inline: 0px !important;
+    padding-inline: 0 !important;
 }
-
-#TabsToolbar {
-    z-index: 2 !important;
-}
-
-#nav-bar {
-    z-index: 1 !important;
-}
-
 
 /* =========================================================
    SIDE BAR
@@ -89,11 +83,6 @@ Nova Rounding Adjustments
 /* History website-row rounding (including mouse hover) */
 sidebar-history {
     --border-radius-circle: 6px !important;
-}
-
-/* Sidebar searchbox rounding */
-#input[type="search"] {
-    border-radius: 6px !important;
 }
 
 /* New-style sidebar header spacing */
@@ -165,6 +154,7 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
 #TabsToolbar {
     margin-top: -3px !important;
     margin-bottom: -4px !important;
+	z-index: 2 !important;
 }
 
 /* Reduce space before the first tab */
@@ -270,6 +260,7 @@ menupopup[placespopup="true"] > menu {
  */
 #nav-bar {
     padding-block: 2px !important;
+	z-index: 1 !important;
 }
 
 /*
