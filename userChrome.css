@@ -192,6 +192,14 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
     border-start-end-radius: 6px !important;
 }
 
+.urlbarView-row[type*="history"] {
+    /* removes a shadow that is behind the clock icon */
+    & .urlbarView-favicon { mask-image: none !important; }
+
+    /* removes the clock icon */
+    & .urlbarView-type-icon { display: none !important; }
+}
+
 
 /* =========================================================
    CONTEXT MENUS
