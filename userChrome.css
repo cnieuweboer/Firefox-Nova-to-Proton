@@ -45,6 +45,28 @@ Nova Rounding Adjustments
 }
 
 /* =========================================================
+   DOWNLOADS
+   ========================================================= */
+
+/* open location button in downloads menu in toolbar */
+.downloadButton {
+    border-radius: 6px !important;
+}
+
+/* settings for ctrl+j window */
+.downloadIconShow > .button-box {
+    border-radius: 6px !important;
+}
+
+#placesToolbar > toolbarbutton {
+    border-radius: 6px !important;
+}
+
+#placesMenu > menu {
+    border-radius: 6px !important;
+}
+
+/* =========================================================
    WINDOW CONTROLS
    ========================================================= */
 
