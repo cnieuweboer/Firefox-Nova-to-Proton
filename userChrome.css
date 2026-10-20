@@ -143,6 +143,22 @@ sidebar-history {
 /* Search-engine/provider button shown in the URL bar */
 .searchmode-switcher {
     --button-border-radius: 4px !important;
+
+    --button-background-color-muted:
+        color-mix(in srgb, currentColor 12%, transparent) !important;
+
+    --button-background-color-muted-hover:
+        color-mix(in srgb, currentColor 20%, transparent) !important;
+
+    --button-background-color-muted-active:
+        color-mix(in srgb, currentColor 28%, transparent) !important;
+
+    --button-background-color-muted-selected:
+        color-mix(in srgb, currentColor 20%, transparent) !important;
+}
+
+.searchmode-switcher[aria-expanded="true"]::part(button) {
+    background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
 /* Firefox/internal-page identity button, e.g. about:settings */
@@ -169,6 +185,11 @@ sidebar-history {
 
     /* Remove additional vertical padding inside each tab slot */
     padding-block: 0 !important;
+}
+
+/* Restore Firefox's split-view vertical positioning */
+#tabbrowser-tabs[orient="horizontal"] tab-split-view-wrapper .tabbrowser-tab {
+    padding-block: var(--split-view-tab-strip-inset) !important;
 }
 
 /* Fully hide tabs inside collapsed groups */
