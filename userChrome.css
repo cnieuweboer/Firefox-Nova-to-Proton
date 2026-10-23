@@ -175,7 +175,7 @@ sidebar-history {
    TABS
    ========================================================= */
 
-.tabbrowser-tab {
+#tabbrowser-arrowscrollbox > .tabbrowser-tab {
     /*
      * Horizontal space between neighboring visible tabs.
      * Lower values make the tabs sit closer together.
@@ -185,11 +185,6 @@ sidebar-history {
 
     /* Remove additional vertical padding inside each tab slot */
     padding-block: 0 !important;
-}
-
-/* Restore Firefox's split-view vertical positioning */
-#tabbrowser-tabs[orient="horizontal"] tab-split-view-wrapper .tabbrowser-tab {
-    padding-block: var(--split-view-tab-strip-inset) !important;
 }
 
 /* Fully hide tabs inside collapsed groups */
@@ -211,6 +206,13 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
 /* Reduce space before the first tab */
 .titlebar-spacer[type="pre-tabs"] {
     width: 2px !important;
+}
+
+/* Tone down the color of the divider in inactive split tab */
+#tabbrowser-tabs tab-split-view-wrapper:not([hasactivetab])
+.tabbrowser-tab:last-child > .tab-stack {
+    border-inline-start-color:
+        color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
 
