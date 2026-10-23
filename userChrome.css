@@ -43,8 +43,6 @@ Nova Rounding Adjustments
 	/* Searchbox corners */
 	--input-search-border-radius: 6px !important;
 	
-	/* Remove tab padding */
-    --tab-margin-block: 0 !important;
 }
 
 }
@@ -209,8 +207,8 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
  * the actual tab buttons.
  */
 #TabsToolbar {
-    margin-top: 4px !important;
-    margin-bottom: 2px !important;
+    margin-top: -2px !important;
+    margin-bottom: -4px !important;
 	z-index: 2 !important;
 }
 
