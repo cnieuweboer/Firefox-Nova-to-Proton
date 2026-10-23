@@ -45,7 +45,12 @@ Nova Rounding Adjustments
 	
 	/*  Vertical padding blocks */
 	--tab-margin-block: 6px !important; 
+	
+	/*  Vertical padding in menus */
+	--panel-menuitem-margin-inline: 4px !important;
 }
+
+
 
 /* =========================================================
    DOWNLOADS
