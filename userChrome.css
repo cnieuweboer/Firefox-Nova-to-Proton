@@ -56,6 +56,21 @@ Nova Rounding Adjustments
     border-radius: 6px !important;
 }
 
+/* padding around the downloaded items and mouse hover*/
+#downloadsPanel-mainView {
+    padding: 4px !important;
+}
+/* padding around the downloaded items, inside mouse hover*/
+.downloadMainArea {
+    padding-block: 6px !important;
+    padding-inline-start: 6px !important;
+}
+
+/* mouse hover rounding */
+#downloadsListBox > richlistitem {
+    border-radius: 4px !important;
+}
+
 /* settings for ctrl+j window */
 .downloadIconShow > .button-box {
     border-radius: 6px !important;
