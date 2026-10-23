@@ -43,8 +43,8 @@ Nova Rounding Adjustments
 	/* Searchbox corners */
 	--input-search-border-radius: 6px !important;
 	
-}
-
+	/*  Vertical padding blocks */
+	--tab-margin-block: 6px !important; 
 }
 
 /* =========================================================
@@ -158,10 +158,6 @@ sidebar-history {
 
     --button-background-color-muted-selected:
         color-mix(in srgb, currentColor 20%, transparent) !important;
-}
-
-.searchmode-switcher[aria-expanded="true"]::part(button) {
-    background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
 /* Firefox/internal-page identity button, e.g. about:settings */
