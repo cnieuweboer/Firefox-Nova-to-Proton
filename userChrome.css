@@ -42,6 +42,11 @@ Nova Rounding Adjustments
 	
 	/* Searchbox corners */
 	--input-search-border-radius: 6px !important;
+	
+	/* Remove tab padding */
+    --tab-margin-block: 0 !important;
+}
+
 }
 
 /* =========================================================
@@ -181,7 +186,8 @@ sidebar-history {
      * Horizontal space between neighboring visible tabs.
      * Lower values make the tabs sit closer together.
      */
-    padding-inline: 1px !important;
+    padding-inline-start: 1px !important;
+    padding-inline-end: 2px !important;
 
     /* Remove additional vertical padding inside each tab slot */
     padding-block: 0 !important;
@@ -203,8 +209,8 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
  * the actual tab buttons.
  */
 #TabsToolbar {
-    margin-top: -3px !important;
-    margin-bottom: -4px !important;
+    margin-top: 4px !important;
+    margin-bottom: 2px !important;
 	z-index: 2 !important;
 }
 
