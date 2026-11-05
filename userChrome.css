@@ -235,6 +235,11 @@ tab-group[collapsed] > .tabbrowser-tab:not([visuallyselected], [multiselected]) 
         color-mix(in srgb, currentColor 20%, transparent) !important;
 }
 
+/* New tab button left padding */
+#tabs-newtab-button {
+    padding-inline-start: 1px !important;
+}
+
 
 /* =========================================================
    URL BAR POPUP
